@@ -1,0 +1,16 @@
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--almost-white);
+  flex-direction: column;
+  width: 256px;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 0 1rem;
+  translate: 100%;
+  transition: translate 0.3s;
+  &--show {
+    translate: 0;
+  }
+}

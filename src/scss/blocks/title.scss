@@ -1,0 +1,20 @@
+.title {
+  &--l {
+    font-size: var(--title-l);
+    margin-bottom: 16px;
+    font-weight: 800;
+  }
+
+  &--yellow {
+    color: var(--yellow);
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+
+  &--new {
+    color: white;
+    font-weight: 800;
+    line-height: 24px;
+  }
+}

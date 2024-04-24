@@ -1,0 +1,22 @@
+.header {
+  position: relative;
+  overflow-x: clip;
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__logo {
+    width: 44px;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 40px;
+    right: 16px;
+    z-index: 1;
+  }
+}

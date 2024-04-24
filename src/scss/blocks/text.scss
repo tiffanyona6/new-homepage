@@ -1,0 +1,13 @@
+.text {
+  &--card {
+    color: var(--grey);
+    font-size: var(--text-body);
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+
+  &--new {
+    color: var(--silver);
+    font-size: var(--text-body);
+  }
+}
