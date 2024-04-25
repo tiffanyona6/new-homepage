@@ -1,0 +1,10 @@
+@use "../mixins/responsive.scss" as *;
+
+.grid {
+  @include responsive(laptop) {
+    display: grid;
+    grid-template-columns: 730px 350px;
+    gap: 30px;
+    margin-bottom: 71px;
+  }
+}

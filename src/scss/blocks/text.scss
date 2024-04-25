@@ -1,13 +1,33 @@
+@use "../mixins/responsive.scss" as * ;
+
 .text {
   &--card {
     color: var(--grey);
     font-size: var(--text-body);
     line-height: 26px;
     margin-bottom: 24px;
+    @include responsive(laptop) {
+      line-height: 26px;
+      margin-top: 0;
+      width: 350px;
+    }
   }
 
   &--new {
     color: var(--silver);
     font-size: var(--text-body);
+    margin-top: 0;
+  }
+
+  &--line {
+    margin-bottom: 31px;
+    padding-bottom: 29px;
+    border-bottom: 1px solid color white;
+  }
+
+  &--info {
+    color: var(--grey);
+    line-height: 26px;
+    margin: 0;
   }
 }

@@ -4,4 +4,16 @@ html {
 body {
   background-color: #ffffff;
   font-family: "Inter", sans-serif;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+body.open::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(47, 46, 46, 0.605);
 }

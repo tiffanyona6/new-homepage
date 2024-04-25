@@ -7,8 +7,10 @@ const menuElement = document.getElementById("menu");
 const handleMenu = () => {
   if (menuElement.classList.contains("menu--show")) {
     menuElement.classList.remove("menu--show");
+    document.body.classList.remove("open");
   } else {
     menuElement.classList.add("menu--show");
+    document.body.classList.add("open");
   }
 };
 buttonElement.addEventListener("click", handleMenu);

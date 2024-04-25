@@ -1,8 +1,16 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/hover.scss" as *;
 .title {
-  &--l {
+  &--xl {
     font-size: var(--title-l);
     margin-bottom: 16px;
     font-weight: 800;
+    margin-top: 0;
+    @include responsive(laptop) {
+      width: 350px;
+      font-size: 56px;
+      line-height: 56px;
+    }
   }
 
   &--yellow {
@@ -16,5 +24,28 @@
     color: white;
     font-weight: 800;
     line-height: 24px;
+    @include hover {
+      color: var(--yellow);
+    }
+  }
+
+  &--number {
+    display: flex;
+    color: var(--silver);
+    font-size: var(--title-m);
+    line-height: 32px;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+
+  &--xs {
+    font-size: var(--title-xs);
+    font-weight: 700;
+    margin-bottom: 9px;
+    line-height: 24px;
+
+    @include hover {
+      color: var(--yellow);
+    }
   }
 }

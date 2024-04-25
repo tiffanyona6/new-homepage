@@ -1,15 +1,37 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/hover.scss" as *;
 .menu {
   position: absolute;
+  display: flex;
   top: 0;
   right: 0;
   background-color: var(--almost-white);
   flex-direction: column;
   width: 256px;
   height: 100vh;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 1rem;
   translate: 100%;
   transition: translate 0.3s;
+  gap: 24px;
+  font-size: 18px;
+  color: var(--dark-blue);
+  z-index: 1;
+
+  @include responsive(laptop) {
+    translate: 0;
+    flex-direction: row;
+    background-color: transparent;
+    height: 26px;
+    top: 110px;
+    right: 244px;
+  }
+
+  &__item {
+    @include hover {
+      color: var(--yellow);
+    }
+  }
   &--show {
     translate: 0;
   }

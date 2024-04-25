@@ -1,5 +1,21 @@
+@use "../mixins/responsive.scss" as *;
 .card {
   &__image {
     margin-bottom: 24px;
+
+    @include responsive(laptop) {
+      width: 730px;
+      height: 300px;
+      margin-bottom: 28px;
+      display: grid;
+      grid-template-columns: 730px 350px;
+    }
+  }
+
+  &__container {
+    @include responsive(laptop) {
+      display: flex;
+      gap: 30px;
+    }
   }
 }

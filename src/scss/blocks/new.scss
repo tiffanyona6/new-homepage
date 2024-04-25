@@ -1,4 +1,11 @@
+@use "../mixins/responsive.scss" as *;
 .new {
   background-color: var(--dark-blue);
   padding: 24px 20px 24px 21px;
+  margin-bottom: 64px;
+  @include responsive(laptop) {
+    width: 350px;
+    height: 511px;
+    margin-bottom: 0;
+  }
 }
